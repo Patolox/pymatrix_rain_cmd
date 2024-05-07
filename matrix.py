@@ -7,8 +7,6 @@ HEIGHT = 70
 DELAY = 0.06
 msg = "Wake up, Neo..."
 
-
-
 # Creating a grid fo WIDTH*HEIGHT length
 matrix = [[" "] * WIDTH for _ in range(HEIGHT)]
     
@@ -48,6 +46,8 @@ time.sleep(3)
 
 v_len = 0
 while True:
+    # Clearing the terminal Screen
+    print("\033c")
     # Deciding the length of the column with random chars
     v_len = random.randint(8, 16)
 
